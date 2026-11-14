@@ -17,8 +17,6 @@ function QuantityPicker() {
         let nextVal = quantity+1;
         // quantity = 1; 
         setQuantity(nextVal);
-
-
     }
 
     return(
