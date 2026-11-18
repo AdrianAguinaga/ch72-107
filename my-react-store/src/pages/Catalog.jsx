@@ -18,7 +18,7 @@ function Catalog(){
         setCart([...cart, item ]);//spread Operator to populate the stateVariable array
         // cart.push(item)
         console.log(item);
-    }
+    }[]
 
     return(
         <div className="catalog">
