@@ -14,6 +14,11 @@ function Product(props){
         console.log(quantity);
         setQty(quantity);
     }
+
+    function handleAdd(){
+        props.onAdd({ ...props.data, quantity: qty})
+    }
+
     // Calculate the Total Price using the data that we get from the QP
     return(
         <div className="product">
@@ -22,6 +27,7 @@ function Product(props){
             <label>${props.data.price} </label>
             <label>${calculateTotal()} </label>
             <QuantityPicker onChange={handleQtyChange}/>
+            <button onClick={handleAdd}>Add</button>
         </div>
     );
 }
